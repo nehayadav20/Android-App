@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7DAEA"
+    tools:context=".MainPageActivity">
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="52dp"
+        android:hint="Search"
+        android:text="Search"
+        app:layout_constraintBottom_toTopOf="@+id/button3_Charged"
+        app:layout_constraintEnd_toStartOf="@+id/button2_product_viewed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button2_product_viewed"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="41dp"
+        android:hint="Product Viewed"
+        android:text="Product Viewed"
+        app:layout_constraintBottom_toTopOf="@+id/button_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toEndOf="@+id/button_search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <Button
+        android:id="@+id/button3_Charged"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:hint="Charged"
+        android:text="Charged"
+        app:layout_constraintBottom_toTopOf="@+id/button_tagged"
+        app:layout_constraintEnd_toStartOf="@+id/button_order"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_search" />
+
+    <Button
+        android:id="@+id/button_tagged"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="64dp"
+        android:hint="Product Tagged"
+        android:text="Product Tagged"
+        app:layout_constraintBottom_toTopOf="@+id/button_inbox"
+        app:layout_constraintEnd_toStartOf="@+id/button_next"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3_Charged" />
+
+    <Button
+        android:id="@+id/button_order"
+        android:layout_width="141dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="35dp"
+        android:hint="Rating"
+        android:text="Rating"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3_Charged"
+        app:layout_constraintTop_toBottomOf="@+id/button2_product_viewed" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="64dp"
+        android:hint="Web View"
+        android:text="Web View"
+        app:layout_constraintBottom_toTopOf="@+id/button_inbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_tagged"
+        app:layout_constraintTop_toBottomOf="@+id/button_order" />
+
+    <Button
+        android:id="@+id/push_btn"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="Subscribe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_inbox"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="260dp"
+        android:text="Go to Inbox"
+        app:layout_constraintBottom_toTopOf="@+id/push_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
